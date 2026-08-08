@@ -1,0 +1,53 @@
+.quality-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.quality-card {
+  background-color: var(--bg-tertiary);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--accent-primary);
+}
+
+.quality-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.quality-card p {
+  font-size: 1.05rem;
+}
+
+.quality-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.quality-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.quality-list li svg {
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+.disclaimer-box {
+  background-color: var(--accent-light);
+  color: var(--accent-primary);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

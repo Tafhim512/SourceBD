@@ -1,0 +1,76 @@
+.process-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: var(--bg-tertiary);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  transition: transform var(--transition-fast);
+}
+
+.process-step:hover {
+  transform: translateX(10px);
+  box-shadow: var(--shadow-md);
+}
+
+.step-number {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent-light);
+  line-height: 1;
+}
+
+.step-content {
+  display: flex;
+  gap: 1.5rem;
+  flex-grow: 1;
+}
+
+.step-icon {
+  color: var(--accent-primary);
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.step-text h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.step-text p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+.step-connector {
+  position: absolute;
+  top: 100%;
+  left: 3.5rem;
+  width: 2px;
+  height: 1.5rem;
+  background-color: var(--border-color);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .process-step {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  .step-connector {
+    display: none;
+  }
+}
