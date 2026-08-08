@@ -11,8 +11,8 @@ export default function Quote() {
     setLoading(true);
     
     const formData = new FormData(e.currentTarget);
-    // Replace with your actual Web3Forms access key
-    formData.append("access_key", "YOUR_WEB3FORMS_ACCESS_KEY"); 
+    // Web3Forms Access Key
+    formData.append("access_key", "68a7c483-edb8-4daa-9fc8-312089e357f6"); 
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
